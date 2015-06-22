@@ -1,0 +1,30 @@
+{
+  "name": "fusionmarketing/bumpress",
+  "description": "Vagrant workflow for WP",
+  "authors": [
+    {
+      "name": "Paul Graham",
+      "email": "pgraham@thisisfusion.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0.12",
+    "johnpbloch/wordpress": "4.2.2",
+    "vlucas/phpdotenv": "~1.0.9"
+  },
+  "extra": {
+    "installer-paths": {
+      "app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "wp"
+  }
+}
