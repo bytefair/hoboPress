@@ -1,3 +1,9 @@
+.DS_Store
+*.tmp
+*.log
+*.sublime-*
+*.sql
+
 /vendor/
 /wp/
 /.vagrant/
