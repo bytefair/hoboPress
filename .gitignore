@@ -17,3 +17,5 @@ app/plugins/*
 !app/plugins/index.php
 app/themes/*
 !app/themes/index.php
+
+app/mu-plugins/timber-library/
