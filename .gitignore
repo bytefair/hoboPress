@@ -1,5 +1,19 @@
-/vendor
-/wp
-/.vagrant
+/vendor/
+/wp/
+/.vagrant/
 
 .env
+
+app/advanced-cache.php
+app/backup-db/
+app/backups/
+app/blogs.dir/
+app/cache/
+app/upgrade/
+app/uploads/
+app/wp-cache-config.php
+
+app/plugins/*
+!app/plugins/index.php
+app/themes/*
+!app/themes/index.php
