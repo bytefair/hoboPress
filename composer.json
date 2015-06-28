@@ -17,14 +17,11 @@
     "php": ">=5.4",
     "composer/installers": "~1.0.12",
     "johnpbloch/wordpress": "4.2.2",
-    "vlucas/phpdotenv": "~1.0.9",
-    "wpackagist-plugin/timber-library": "~0.21"
+    "vlucas/phpdotenv": "~1.0.9"
   },
   "extra": {
     "installer-paths": {
-      "app/mu-plugins/{$name}/": [
-        "type:wordpress-muplugin",
-        "wpackagist-plugin/timber-library" ],
+      "app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "app/plugins/{$name}/": ["type:wordpress-plugin"],
       "app/themes/{$name}/": ["type:wordpress-theme"]
     },
