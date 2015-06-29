@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4a56f84cdc2f2f6e9632ec9e7e437dd1",
+    "hash": "c0f6ac109a3e8e28b157280488451603",
     "packages": [
         {
             "name": "composer/installers",
@@ -236,6 +236,26 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/use-google-libraries",
+            "version": "1.6.2.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/use-google-libraries/",
+                "reference": "tags/1.6.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/use-google-libraries.1.6.2.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/use-google-libraries/"
         }
     ],
     "packages-dev": [],
