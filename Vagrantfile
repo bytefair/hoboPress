@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "scotch/box"
   config.vm.network :private_network, id: "wp_primary", ip: "192.168.33.10"
   config.vm.hostname = "hobopress"
-  config.vm.synced_folder ".", "/var/www/public", :mount_options => ["dmode=777", "fmode=666"]
+  config.vm.synced_folder ".", "/var/www/public", :mount_options => ["dmode=777", "fmode=777"]
 
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--memory", 1024]
@@ -19,4 +19,16 @@ Vagrant.configure("2") do |config|
   end
 
   config.ssh.forward_agent = true
+
+  if defined? VagrantPlugins::Triggers
+    config.trigger.before :halt, :stdout => true do
+      run "vagrant ssh -c '/var/www/public/db_backup'"
+    end
+    config.trigger.before :suspend, :stdout => true do
+      run "vagrant ssh -c '/var/www/public/db_backup'"
+    end
+    config.trigger.before :destroy, :stdout => true do
+      run "vagrant ssh -c '/var/www/public/db_backup'"
+    end
+  end
 end
