@@ -4,11 +4,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 /**
  * Use Dotenv to set required environment variables and load .env file in root
  */
+
 if (file_exists(__DIR__ . '/.env')) {
-  Dotenv::load(__DIR__);
+  $dotenv = new Dotenv\Dotenv(__DIR__);
+  $dotenv->load();
 }
 
-Dotenv::required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
+$dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
 
 /**
  * Set up our global environment constant and load its config first
