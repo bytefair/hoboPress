@@ -18,7 +18,13 @@
     "php": ">=5.4",
     "composer/installers": "1.0.22",
     "johnpbloch/wordpress": "4.4.1",
-    "vlucas/phpdotenv": "2.2.0"
+    "vlucas/phpdotenv": "2.2.0",
+    "wpackagist-plugin/query-monitor": "^2.8",
+    "wpackagist-plugin/debug-objects": "^2.2",
+    "wpackagist-plugin/user-switching": "^1.0",
+    "wpackagist-plugin/debug-bar": "^0.8.2",
+    "wpackagist-plugin/rewrite-rules-inspector": "^1.2",
+    "wpackagist-plugin/log-deprecated-notices": "^0.3.0"
   },
   "extra": {
     "installer-paths": {
