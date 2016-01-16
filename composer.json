@@ -24,7 +24,9 @@
     "wpackagist-plugin/user-switching": "^1.0",
     "wpackagist-plugin/debug-bar": "^0.8.2",
     "wpackagist-plugin/rewrite-rules-inspector": "^1.2",
-    "wpackagist-plugin/log-deprecated-notices": "^0.3.0"
+    "wpackagist-plugin/log-deprecated-notices": "^0.3.0",
+    "wpackagist-plugin/theme-check": "20151211.1",
+    "wpackagist-plugin/white-label-cms": "^1.5"
   },
   "extra": {
     "installer-paths": {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57cb839785d184cc7095bdf7974c8672",
-    "content-hash": "33279b95ed52d33ed9b54351f5419d90",
+    "hash": "56f077a2d5db5e2660b1055ad173e473",
+    "content-hash": "82f0f717bfed4aab098400fef40b3006",
     "packages": [
         {
             "name": "composer/installers",
@@ -342,6 +342,26 @@
             "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/"
         },
         {
+            "name": "wpackagist-plugin/theme-check",
+            "version": "20151211.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/theme-check/",
+                "reference": "tags/20151211.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/theme-check.20151211.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/theme-check/"
+        },
+        {
             "name": "wpackagist-plugin/user-switching",
             "version": "1.0.9",
             "source": {
@@ -360,6 +380,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/user-switching/"
+        },
+        {
+            "name": "wpackagist-plugin/white-label-cms",
+            "version": "1.5.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/white-label-cms/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/white-label-cms.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/white-label-cms/"
         }
     ],
     "packages-dev": [],
