@@ -11,24 +11,23 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     }
   ],
   "require": {
-    "php": ">=5.4",
-    "composer/installers": "1.0.22",
-    "johnpbloch/wordpress": "4.4.1",
-    "vlucas/phpdotenv": "2.2.0",
+    "php": ">=5.5",
+    "composer/installers": "^1.0",
+    "johnpbloch/wordpress": "^4.4.2",
+    "vlucas/phpdotenv": "~2.2"
+  },
+  "require-dev": {
     "wpackagist-plugin/query-monitor": "^2.8",
     "wpackagist-plugin/debug-objects": "^2.2",
     "wpackagist-plugin/user-switching": "^1.0",
     "wpackagist-plugin/debug-bar": "^0.8.2",
     "wpackagist-plugin/rewrite-rules-inspector": "^1.2",
     "wpackagist-plugin/log-deprecated-notices": "^0.3.0",
-    "wpackagist-plugin/theme-check": "20151211.1",
-    "wpackagist-plugin/white-label-cms": "^1.5",
-    "wpackagist-plugin/rest-api": "2.0-beta11",
-    "wpackagist-plugin/acf-to-wp-api": "^1.3"
+    "wpackagist-plugin/theme-check": "^20151211.1"
   },
   "extra": {
     "installer-paths": {
